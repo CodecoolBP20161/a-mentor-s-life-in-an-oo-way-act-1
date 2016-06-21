@@ -28,7 +28,7 @@ None
 
 #### Return value
 
-```Mentor``` object
+```Student``` object
 
 ## Instance methods
 

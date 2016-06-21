@@ -1,34 +1,42 @@
 # Person
 
 ## Description
-This class represents a student in real life. It should inherit all properties from the Person class, but also has some other functionalities.
+This class represents a Person in real life, but we only use it to inherit it's features in Student and Mentor classes
 
 ## Parent class
-Person
+None
 
 ## Attributes
 
-* ```knowledge_level```
-  * data type: integer
-  * description: stores the knowledge level of the student in programming
+* ```first_name```
+  * data type: string
+  * description: /obvious/
 
 
-* ```energy_level```
+* ```last_name```
+  * data type: string
+  * description: /obvious/
+
+
+* ```year_of_birth```
   * data type: integer
-  * description: current energy level
+  * description: /obvious/
+
+
+* ```gender```
+  * data type: string
+  * description: (male/female/notsure)
+
 
 ## Class methods
-
-### ```create_by_csv```
-
-Gets a csv file path as an argument (the csv contains all the data needed to instantiate a student object) and gives back a list of students.
+None
 
 #### Arguments
 None
 
 #### Return value
 
-```Mentor``` object
+```Person``` object
 
 ## Instance methods
 
