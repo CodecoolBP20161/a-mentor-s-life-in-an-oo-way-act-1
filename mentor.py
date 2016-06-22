@@ -4,9 +4,12 @@ import os
 
 
 class Mentor(Person):
-    def __init__(self, first_name, last_name, year_of_birth, gender, nickname):
+    def __init__(self, first_name, last_name, year_of_birth, gender, nickname, knowledge_level, energy_level, joy_level):
         super().__init__(first_name, last_name, year_of_birth, gender)
         self.nickname = nickname
+        self.knowledge_level = knowledge_level
+        self.energy_level = energy_level
+        self.joy_level = joy_level
 
     @staticmethod
     def create_by_csv():
