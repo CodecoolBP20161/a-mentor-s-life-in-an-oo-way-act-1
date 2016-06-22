@@ -10,10 +10,25 @@ Person
 
 * All of the arguments of the Person class.
 
+
 * ```nickname```
   * data type: string
   * description: stores the mentor's secret nickname between the students
 
+
+* ```knowledge_level```
+  * data type: integer
+  * description: stores the knowledge level of the student in programming
+
+
+* ```energy_level```
+  * data type: integer
+  * description: current energy level
+
+
+* ```joy_level```
+  * data type: integer
+  * description: current joy level
 ## Class methods
 
 ### ```create_by_csv```
