@@ -8,6 +8,13 @@ Person
 
 ## Attributes
 
+* All of the arguments of the Person class.
+
+* ```nickname```
+  * data type: string
+  * description: stores the mentor's secret nickname between the students
+
+
 * ```knowledge_level```
   * data type: integer
   * description: stores the knowledge level of the student in programming
@@ -17,11 +24,16 @@ Person
   * data type: integer
   * description: current energy level
 
+
+* ```joy_level```
+  * data type: integer
+  * description: current joy level
+
 ## Class methods
 
 ### ```create_by_csv```
 
-Gets a csv file path as an argument (the csv contains all the data needed to instantiate a student object) and gives back a list of students.
+This is a static method. The csv contains all the data needed to instantiate a mentor object.
 
 #### Arguments
 None
