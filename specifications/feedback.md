@@ -40,12 +40,12 @@ Change two object values (receiver and sender).
 
 #### Arguments
 
-* ```target```
+* ```person_object```
   * data type: object
   * description: Who the feedback is given for.
 
 #### Return value
-Return two objects (receiver and sender).
+None
 
 ### ```get_feedback```
 Change two object values (receiver and sender).
