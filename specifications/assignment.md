@@ -1,7 +1,7 @@
 # Assignment
 
 ## Description
-This class represents the available games in Codecool
+This class represents how's the mentor handle the assignments in CANVAS and what kind of changes he and the students get from it.
 
 ## Parent class
 None
@@ -10,10 +10,12 @@ None
 
 * ```name```
   * data type: string
-  * description: Name of the electronic tool.
-* ```submit```
-  * data type: boolean
-  * description: If is True, the submit done, if False, then not.
+  * description: Name of the assignment.
+
+* ```due_hour```
+  * data type: string
+  * description: Due hour of the assignment.
+
 
 ## Class methods
 
@@ -32,7 +34,13 @@ The constructor of the object.
 
 #### Arguments
 
-All of the arguments of the class itself.
+* ```name```
+  * data type: string
+  * description: The name of the assignment.
+
+* ```deadline_hour```
+  * data type: string
+  * description: The deadline hour of the assignment.
 
 #### Return value
 None
@@ -42,7 +50,10 @@ It's check the assignment.
 
 #### Arguments
 
-None
+* ```mentor_object```
+  * data type: object
+  * description: The object of the chosen mentor.
+
 
 #### Return value
- boolean
+ string
