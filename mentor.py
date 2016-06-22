@@ -18,6 +18,6 @@ class Mentor(Person):
         filereader = csv.reader(open(current_file_path + "/data/mentors.csv"), delimiter=';')
         for row in filereader:
             mentor_firstname = str(row[0]+"_mentor")
-            mentor_firstname = Mentor(row[0], row[1], row[2], row[3], row[4])
+            mentor_firstname = Mentor(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8])
             list_mentorobjects.append(mentor_firstname)
         return list_mentorobjects
