@@ -12,7 +12,7 @@ None
   * data type: string
   * description: Name of the assignment.
 
-* ```due_hour```
+* ```deadline_hour```
   * data type: string
   * description: Due hour of the assignment.
 
