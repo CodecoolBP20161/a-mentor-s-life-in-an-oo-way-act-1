@@ -10,9 +10,12 @@ class CodecoolClass:
         self.mentors = mentors
         self.students = students
 
-    def generate_local(location, year, mentors, students):
+    def generate_local():
         cc_budapest = CodecoolClass("Budapest", 2016, Mentor.count_names(), Student.count_names())
-        return cc_budapest
+        print("School @ {}, in year {} is created, with {} mentors and {} students.".format(self.location,
+                                                                                            self.year,
+                                                                                            self.Mentor.count_names(),
+                                                                                            self.Student.count_names()))
 
     def find_student_by_full_name(full_name):
         if full_name in Student.create_full_name_list():
