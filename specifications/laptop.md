@@ -42,3 +42,14 @@ Student object
 
 #### Return value
 Student object
+
+### ```playing```
+
+If the switch attribute is True, then increase a student joy level and decrease the energy level.
+
+#### Arguments
+
+Student object
+
+#### Return value
+Student object
