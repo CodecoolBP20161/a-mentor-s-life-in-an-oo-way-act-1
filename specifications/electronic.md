@@ -55,11 +55,11 @@ None
 
 ### ```tool_repair```
 
-Check the error attribute. If True, then repair the tool (change the error attribute).
+Check the error attribute. If True, then repair the tool (change the error attribute). After that modified the mentor knowledge and energy level.
 
 #### Arguments
 
-None
+Mentor object
 
 #### Return value
 None
