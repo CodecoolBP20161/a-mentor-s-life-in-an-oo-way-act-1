@@ -28,7 +28,7 @@ None
 None
 
 #### Return value
-```error``` attribute
+None
 
 ## Instance methods
 
@@ -44,7 +44,18 @@ None
 
 ### ```tool_switcher```
 
-Check the error attribute. If False, then switch the switch boolean. If not, then give an error message.
+Check the error attribute. If False, then change the switch boolean. If not, then give a message.
+
+#### Arguments
+
+None
+
+#### Return value
+None
+
+### ```tool_repair```
+
+Check the error attribute. If True, then repair the tool (change the error attribute).
 
 #### Arguments
 
