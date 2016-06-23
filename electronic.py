@@ -1,3 +1,7 @@
+from mentor import Mentor
+from student import Student
+
+
 class Electronic():
 
     def __init__(self, name, switch, error):
@@ -28,11 +32,22 @@ class Laptop(Electronic):
     def __init__(self, name, switch, error):
         super().__init__(name, switch, error)
 
-    def coding(self):
-        # This function need a student object!
+    def coding(self, student_object):
         if self.switch is True:
-            print("The student knowledge level increasing and the energy level decreasing.")
+            student_object.knowledge_level += 10
+            student_object.energy_level -= 10
+            print("{}'s knowledge level increasing and the energy level decreasing by 10.". format(
+                student_object.nickname))
         else:
             print("The laptop isn't turned on.")
-        # This will be returned student object.
+        return
+
+    def playing(self, student_object):
+        if self.switch is True:
+            student_object.joy_level += 10
+            student_object.energy_level -= 10
+            print("{}'s joy level increasing and the energy level decreasing by 10.". format(
+                student_object.nickname))
+        else:
+            print("The laptop isn't turned on.")
         return
