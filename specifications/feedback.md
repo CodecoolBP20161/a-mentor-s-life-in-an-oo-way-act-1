@@ -1,7 +1,7 @@
 # Feedback
 
 ## Description
-This class represents the between mentor and mentor or mentor and student.
+This class represents how the mentors give feedback to a student or each other.
 
 ## Parent class
 None
@@ -30,7 +30,11 @@ The constructor of the object.
 
 #### Arguments
 
-All of the arguments of the class itself.
+* ```mentor name```
+  * data type: object
+  * description: Who gives the feedback.
+
+
 
 #### Return value
 None
@@ -52,7 +56,7 @@ Change two object values (receiver and sender).
 
 #### Arguments
 
-* ```target```
+* ```person_object```
   * data type: object
   * description: Who ask the feedback.
 
