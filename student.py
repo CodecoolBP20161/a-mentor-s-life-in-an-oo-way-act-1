@@ -18,6 +18,6 @@ class Student(Person):
         filereader = csv.reader(open(current_file_path + "/data/students.csv"), delimiter=';')
         for row in filereader:
             student_firstname = str(row[0]+"_student")
-            student_firstname = Student(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8])
+            student_firstname = Student(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7])
             list_studentobjects.append(student_firstname)
         return list_studentobjects
