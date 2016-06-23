@@ -26,3 +26,10 @@ class Student(Person):
         current_file_path = os.path.dirname(__file__)
         filereader = csv.reader(open(current_file_path + "/data/students.csv"), delimiter=';')
         return sum(1 for line in filereader)
+
+    def create_full_name():
+        current_file_path = os.path.dirname(__file__)
+        filereader = csv.reader(open(current_file_path + "/data/students.csv"), delimiter=';')
+        for row in filereader:
+            full_name = str(row[0] + " " + row[1])
+        return full_name
