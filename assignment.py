@@ -12,7 +12,7 @@ class Assignment:
         remain_time = self.deadline_hour - int(actual_time_hour)
         if self.deadline_hour < int(actual_time_hour):
             print("{0} corrected {1} assignment.".format(mentor_object.nickname, self.name))
-            mentor_object.energy -= 10
+            mentor_object.energy_level -= 10
             print("{}'s energy level decreased by 10 points".format(mentor_object.nickname))
         else:
             print("There's still {} hours until the end of the deadline.".format(remain_time))
