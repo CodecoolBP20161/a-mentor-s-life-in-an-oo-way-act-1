@@ -21,3 +21,8 @@ class Student(Person):
             student_firstname = Student(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7])
             list_studentobjects.append(student_firstname)
         return list_studentobjects
+
+    def count_names():
+        current_file_path = os.path.dirname(__file__)
+        filereader = csv.reader(open(current_file_path + "/data/students.csv"), delimiter=';')
+        return sum(1 for line in filereader)
