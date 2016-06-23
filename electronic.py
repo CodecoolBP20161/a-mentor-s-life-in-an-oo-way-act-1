@@ -20,10 +20,16 @@ class Electronic():
         else:
             print("The tool doesn't working! :(")
 
-    def tool_repair(self):
+    def tool_repair(self, mentor_object):
         if self.error is True:
             self.error = False
             print("The tool is working now! :)")
+            mentor_object.knowledge_level += 20
+            print("{}'s knowledge level increasing by 20 (It was a vluable experiance!)". format(
+                mentor_object.nickname))
+            mentor_object.knowledge_level -= 15
+            print("{}'s energy level decreasing by 15. (It was very exhausting...)". format(
+                mentor_object.nickname))
         else:
             print("The tool already working!")
 
