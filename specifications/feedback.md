@@ -56,7 +56,7 @@ Change two object values (receiver and sender).
 
 #### Arguments
 
-* ```person_object```
+* ```mentor_object```
   * data type: object
   * description: Who ask the feedback.
 
