@@ -27,7 +27,7 @@ class Electronic():
             mentor_object.knowledge_level += 20
             print("{}'s knowledge level increasing by 20 (It was a vluable experiance!)". format(
                 mentor_object.nickname))
-            mentor_object.knowledge_level -= 15
+            mentor_object.energy_level -= 15
             print("{}'s energy level decreasing by 15. (It was very exhausting...)". format(
                 mentor_object.nickname))
         else:
