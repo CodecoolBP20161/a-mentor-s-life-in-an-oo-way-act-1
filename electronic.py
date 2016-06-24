@@ -1,5 +1,6 @@
 from mentor import Mentor
 from student import Student
+from colors import Colors
 
 
 class Electronic():
@@ -13,25 +14,25 @@ class Electronic():
         if self.error is False:
             if self.switch is True:
                 self.switch = False
-                print("The tool is switched OFF")
+                print(Colors.OKGREEN + "The tool is switched OFF" + Colors.ENDC)
             else:
                 self.switch = True
-                print("The tool is switched ON")
+                print(Colors.OKGREEN + "The tool is switched ON" + Colors.ENDC)
         else:
-            print("The tool doesn't working! :(")
+            print(Colors.OKGREEN + "The tool doesn't working! :(" + Colors.ENDC)
 
     def tool_repair(self, mentor_object):
         if self.error is True:
             self.error = False
-            print("The tool is working now! :)")
+            print(Colors.OKGREEN + "The tool is working now! :)"+ Colors.ENDC)
             mentor_object.knowledge_level += 20
-            print("{}'s knowledge level increasing by 20 (It was a vluable experiance!)". format(
-                mentor_object.nickname))
+            print(Colors.OKGREEN + "{}'s knowledge level increasing by 20 (It was a vluable experiance!)".format(
+                mentor_object.nickname) + Colors.ENDC)
             mentor_object.energy_level -= 15
-            print("{}'s energy level decreasing by 15. (It was very exhausting...)". format(
-                mentor_object.nickname))
+            print(Colors.OKGREEN + "{}'s energy level decreasing by 15. (It was very exhausting...)".format(
+                mentor_object.nickname) + Colors.ENDC)
         else:
-            print("The tool already working!")
+            print(Colors.OKGREEN + "The tool already working!" + Colors.ENDC)
 
 
 class Laptop(Electronic):
@@ -42,18 +43,18 @@ class Laptop(Electronic):
         if self.switch is True:
             student_object.knowledge_level += 10
             student_object.energy_level -= 10
-            print("{}'s knowledge level increasing and the energy level decreasing by 10.". format(
-                student_object.nickname))
+            print(Colors.OKGREEN + "{}'s knowledge level increasing and the energy level decreasing by 10.".format(
+                student_object.nickname) + Colors.ENDC)
         else:
-            print("The laptop isn't turned on.")
+            print(Colors.OKGREEN + "The laptop isn't turned on." + Colors.ENDC)
         return
 
     def playing(self, student_object):
         if self.switch is True:
             student_object.joy_level += 10
             student_object.energy_level -= 10
-            print("{}'s joy level increasing and the energy level decreasing by 10.". format(
-                student_object.nickname))
+            print(Colors.OKGREEN + "{}'s joy level increasing and the energy level decreasing by 10.".format(
+                student_object.nickname) + Colors.ENDC)
         else:
-            print("The laptop isn't turned on.")
+            print(Colors.OKGREEN + "The laptop isn't turned on." + Colors.ENDC)
         return

@@ -4,9 +4,10 @@ from electronic import Electronic, Laptop
 from feedback import Feedback
 from mentor import Mentor
 from student import Student
+from colors import Colors
 
 
-print("The ACT present an (almost) average day in codecool.")
+print(Colors.OKBLUE + "\nThe ACT present an (almost) average day in codecool." + Colors.ENDC)
 skip = input()
 miki = Mentor.create_by_csv()[0]
 dani = Mentor.create_by_csv()[1]
@@ -116,4 +117,4 @@ skip = input()
 print("After checking:\nNickname: {}\nKnowledge level: {}\nEnergy level: {}\nJoy level: {}".format(
     tomi.nickname, tomi.knowledge_level, tomi.energy_level, tomi.joy_level))
 skip = input()
-print("So the day is over, and everybody go home and rest...")
+print(Colors.OKBLUE + "So the day is over, and everybody go home and rest...\n" + Colors.ENDC)
