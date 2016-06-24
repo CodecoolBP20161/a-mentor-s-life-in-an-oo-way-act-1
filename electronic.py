@@ -19,20 +19,20 @@ class Electronic():
                 self.switch = True
                 print(Colors.OKGREEN + "The tool is switched ON" + Colors.ENDC)
         else:
-            print(Colors.OKGREEN + "The tool doesn't working! :(" + Colors.ENDC)
+            print(Colors.OKGREEN + "The tool doesn't work! :(" + Colors.ENDC)
 
     def tool_repair(self, mentor_object):
         if self.error is True:
             self.error = False
-            print(Colors.OKGREEN + "The tool is working now! :)"+ Colors.ENDC)
+            print(Colors.OKGREEN + "The tool works now! :)" + Colors.ENDC)
             mentor_object.knowledge_level += 20
-            print(Colors.OKGREEN + "{}'s knowledge level increasing by 20 (It was a vluable experiance!)".format(
+            print(Colors.OKGREEN + "{}'s knowledge level increased by 20 (It was a valuable experience!)".format(
                 mentor_object.nickname) + Colors.ENDC)
             mentor_object.energy_level -= 15
-            print(Colors.OKGREEN + "{}'s energy level decreasing by 15. (It was very exhausting...)".format(
+            print(Colors.OKGREEN + "{}'s energy level decreased by 15. (It was very exhausting...)".format(
                 mentor_object.nickname) + Colors.ENDC)
         else:
-            print(Colors.OKGREEN + "The tool already working!" + Colors.ENDC)
+            print(Colors.OKGREEN + "The tool already works!" + Colors.ENDC)
 
 
 class Laptop(Electronic):
@@ -43,7 +43,7 @@ class Laptop(Electronic):
         if self.switch is True:
             student_object.knowledge_level += 10
             student_object.energy_level -= 10
-            print(Colors.OKGREEN + "{}'s knowledge level increasing and the energy level decreasing by 10.".format(
+            print(Colors.OKGREEN + "{}'s knowledge level increased and the energy level decreased by 10.".format(
                 student_object.nickname) + Colors.ENDC)
         else:
             print(Colors.OKGREEN + "The laptop isn't turned on." + Colors.ENDC)
@@ -53,7 +53,7 @@ class Laptop(Electronic):
         if self.switch is True:
             student_object.joy_level += 10
             student_object.energy_level -= 10
-            print(Colors.OKGREEN + "{}'s joy level increasing and the energy level decreasing by 10.".format(
+            print(Colors.OKGREEN + "{}'s joy level increased and the energy level decreased by 10.".format(
                 student_object.nickname) + Colors.ENDC)
         else:
             print(Colors.OKGREEN + "The laptop isn't turned on." + Colors.ENDC)

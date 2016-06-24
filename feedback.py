@@ -18,5 +18,5 @@ class Feedback():
     def get_feedback(mentor_object):
         mentor_object.energy_level += 5
         mentor_object.joy_level += 5
-        print(Colors.OKGREEN + "{0} asked the students for some feedback. {0}'s energy and joy level increased by 5".format(
-                mentor_object.nickname) + Colors.ENDC)
+        print(Colors.OKGREEN + "{0} asked the mentors for some feedback. {0}'s energy and joy level increased by 5"
+              .format(mentor_object.nickname) + Colors.ENDC)
