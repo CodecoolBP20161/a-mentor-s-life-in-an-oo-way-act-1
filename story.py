@@ -107,7 +107,13 @@ print("He forget, that the deadline hour don't come yet. But now he know.")
 skip = input()
 print("And he check an other assignment.")
 skip = input()
+print("Before checking:\nNickname: {}\nKnowledge level: {}\nEnergy level: {}\nJoy level: {}".format(
+    tomi.nickname, tomi.knowledge_level, tomi.energy_level, tomi.joy_level))
+skip = input()
 b = Assignment("Inventory", 3)
 b.check_assignment(tomi)
+skip = input()
+print("After checking:\nNickname: {}\nKnowledge level: {}\nEnergy level: {}\nJoy level: {}".format(
+    tomi.nickname, tomi.knowledge_level, tomi.energy_level, tomi.joy_level))
 skip = input()
 print("So the day is over, and everybody go home and rest...")
